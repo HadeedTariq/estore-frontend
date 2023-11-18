@@ -15,6 +15,7 @@ const CartHandler = ({ bg, handleClick, product, children, add }) => {
         return;
       }
     }
+    toast.success("Added To Cart", { duration: 1200 });
     dispatch(handleClick(product));
   };
   return (
